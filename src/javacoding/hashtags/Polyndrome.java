@@ -3,11 +3,12 @@ package javacoding.hashtags;
 public class Polyndrome {
 	public static void main(String[] args) {
 		int i = 123321;
-		boolean poly = poly(i);
-		System.out.println(poly);
+		boolean isPalindrome = checkIfPalindrome(i);
+		String output = String.format("%d is Palindrome ? : %s", i, String.valueOf(isPalindrome));
+		System.out.println(output);
 	}
 
-	public static boolean poly(int in) {
+	public static boolean checkIfPalindrome(int in) {
 		if (in < 10)
 			return true;
 		while (in > 10) {
